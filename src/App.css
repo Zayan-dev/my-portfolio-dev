@@ -1,0 +1,353 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9FB;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Navbar Css */
+.navbar {
+    padding: 1rem;
+}
+
+.cv-anchor {
+    /* border: 2px solid black; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B88A2;
+    color: #FFF9FB;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    outline: none;
+}
+
+.cv-anchor:hover {
+    background-color: #0d3647;
+}
+
+.navbar h1 {
+    color: #252627;
+}
+
+.navbar span {
+    color: #BB0A21;
+}
+
+/* Hero Css */
+.hero {
+    /* border: 1px solid red; */
+    height: 100%;
+}
+
+.inner-cont {
+    /* border: 1px solid yellow; */
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.text {
+    width: 50%;
+}
+
+.hero-z {
+    color: #BB0A21;
+}
+
+.hero-front {
+    color: #4B88A2;
+}
+
+.text img {
+    height: 60px;
+    width: 60px;
+}
+
+.text h1,
+h3 {
+    font-size: 30px;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icons img {
+    width: 41px;
+    height: 41px;
+}
+
+.blob {
+    width: 40%;
+    height: 25rem;
+    background: url('./assets/imgs/ZAYAN\ DEV.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 5px 5px 1px #2526278f;
+    animation: blob 3s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 768px) {
+    .blob {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@keyframes blob {
+
+    0%,
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%
+    }
+}
+
+.techstack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-left: 1rem;
+    align-items: center;
+    position: relative;
+    bottom: 5px;
+    animation: tech-icon 1s ease-in-out;
+}
+
+.postman-icon {
+    width: 55px;
+    height: 55px;
+}
+
+@keyframes tech-icon {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About Css */
+.about {
+    height: 40rem;
+    /* border: 2px solid red; */
+    margin-top: 5rem;
+    background-color: #252627;
+}
+
+.about-inner {
+    /* border: 2px solid yellow; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.about-text {
+    /* border: 1px solid white; */
+    color: #4B88A2;
+    height: 100%;
+    width: 30%;
+    font-size: 30px;
+}
+
+.move-text {
+    display: flex;
+    align-items: center;
+}
+
+.move-text a {
+    color: #4B88A2;
+    text-decoration: none;
+}
+
+.about-img {
+    /* border: 1px solid green; */
+    background: url('./assets/imgs/ZAYAN\ DEV\ cr.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+    border-radius: 5rem;
+}
+
+.creator-name {
+    color: #BB0A21;
+    position: relative;
+    bottom: 9rem;
+    overflow: hidden;
+    display: flex;
+}
+
+.creator-name h1 {
+    /* border: 1px solid red; */
+    white-space: nowrap;
+    font-size: 97px;
+    letter-spacing: 1px;
+    animation: move-name 5s linear infinite;
+    text-shadow: 1px 1px 1px #252627;
+}
+
+@keyframes move-name {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-text {
+        font-size: 15px;
+    }
+
+    .move-text img {
+        width: 30px;
+    }
+
+    .about-img {
+        width: 80%;
+    }
+
+    .creator-name h1 {
+        font-size: 60px;
+    }
+}
+
+/* Project Css */
+.project {
+    /* border: 1px solid red; */
+    margin-top: 5rem;
+    height: 100%;
+}
+
+.project h1 {
+    color: #252627;
+}
+
+.project-div {
+    /* border: 1px solid yellow; */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.project-div img {
+    border-radius: 30px;
+    width: 25rem;
+}
+
+.project-text h3 {
+    color: #BB0A21;
+}
+
+.project-text a {
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #252627;
+}
+
+.project-text img {
+    width: 2rem;
+}
+
+.odd-div {
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+    .project-div {
+        flex-wrap: wrap;
+    }
+}
+
+.gmail {
+    /* border: 1px solid red; */
+    height: 20rem;
+    color: #252627;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gmail h1 {
+    font-size: 70px;
+}
+
+.gmail span {
+    color: #BB0A21
+}
+
+.gmail-circle {
+    border: 1px solid #252627;
+    padding: .5rem;
+    height: 7rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.gmail-circle a {
+    text-decoration: none;
+    color: #252627;
+}
+
+.gmail-circle:hover {
+    cursor: pointer;
+}
+
+/* Footer Css */
+.footer {
+    height: 100%;
+    background-color: #252627;
+    color: #FFF9FB;
+}
+
+.inner-footer {
+    /* border: 1px solid red; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer span {
+    color: #BB0A21;
+}
